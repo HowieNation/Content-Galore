@@ -2,31 +2,34 @@
 	"schemaVersion": 1,
 	"id": "contentgalore",
 	"version": "${version}",
-	"name": "ContentGalore",
+	"name": "Content Galore",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"Me!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/HowieNation/Content-Galore"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/contentgalore/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"howie_nation.cg.ContentGalore"
+			"howie_nation.content_galore.ContentGalore"
+		],
+		"client": [
+			"howie_nation.content_galore.ContentGaloreClient"
 		],
 		"fabric-datagen": [
-			"howie_nation.cg.ContentGaloreDataGenerator"
+			"howie_nation.content_galore.ContentGaloreDataGenerator"
 		]
 	},
 	"mixins": [
 		"contentgalore.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.14.24",
+		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"

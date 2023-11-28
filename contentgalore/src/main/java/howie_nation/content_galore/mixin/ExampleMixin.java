@@ -1,4 +1,4 @@
-package howie_nation.cg.mixin;
+package howie_nation.content_galore.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
